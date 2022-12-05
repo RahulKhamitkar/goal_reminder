@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/todayFragment">
+
+    <fragment
+        android:id="@+id/pastFragment"
+        android:name="com.rahul.goalreminder.features.past.view.PastFragment"
+        android:label="fragment_past"
+        tools:layout="@layout/fragment_past" />
+
+    <fragment
+        android:id="@+id/todayFragment"
+        android:name="com.rahul.goalreminder.features.today.view.TodayFragment"
+        android:label="fragment_today"
+        tools:layout="@layout/fragment_today" />
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.rahul.goalreminder.features.settings.view.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
